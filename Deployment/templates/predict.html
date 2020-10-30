@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Predict Loan Default Risk</title>
+	<link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='stylesheets/style-predict.css') }}">
+</head>
+<body>
+	<div class = 'form-descrip'>
+		<h1>Predict Loan Default Risk For Client</h1>
+		<h2>Kindly Enter a Customer ID between 100001 and 456255<br> whose Defaulting Characteristics are to be predicted.</h2>
+	</div>
+	<div class = 'form-details'>
+		<form id = 'application' action = '/predict' method = 'POST'>
+			<br>
+			<label for = 'SK_ID_CURR'>Enter Customer ID</label><br>
+			<input name = 'SK_ID_CURR' type = 'number' max = 456255 min = 100001 step = 1 class = 'application-input' placeholder="SK_ID_CURR" value = 100001><br>
+
+			<input type = 'submit' class = 'application-input submit' value = 'Predict'>
+		</form>
+	</div>
+
+</body>
+</html>

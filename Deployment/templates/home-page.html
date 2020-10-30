@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Home - Home Credit Group Default Prediction</title>
+	<link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='stylesheets/style-home.css') }}">
+</head>
+<body>
+	<img src="/static/images/Home-credit.png">
+	<div class = 'home-title'>
+		<h1>Welcome to Home Credit Group</h1>
+		<h2>To check the Loan Default Risk associated with an applicant, click on the button below</h2>
+		<form id = 'Home-page' action = '/home' method = 'POST'>
+			<input type = 'submit' class = 'form-control submit' value = 'Check For Eligibility'>
+		</form>
+	</div>
+</body>
+</html>
