@@ -1,4 +1,3 @@
-
 from flask import Flask, request
 import pandas as pd
 import numpy as np
@@ -11,9 +10,10 @@ from pipeline import final_pipeline
 
 app = Flask(__name__)
 
-file_directory = 'Final Pipeline Files/'
 #instantiating the pipeline
+file_directory = 'Final Pipeline Files/'
 test_predictor_class = final_pipeline(file_directory = file_directory)
+
 with open(file_directory + 'application_table_dtypes.pkl', 'rb') as f:
 	application_dtypes = pickle.load(f)
 #home page
@@ -30,7 +30,7 @@ def inputs_page():
 @app.route('/predict', methods = ['POST'])
 def prediction():
 	conn = sqlite3.connect(file_directory + 'HOME_CREDIT_DB.db')
-    #getting the SK_ID_CURR from user
+    	#getting the SK_ID_CURR from user
 	sk_id_curr = request.form.to_dict()['SK_ID_CURR']
 	sk_id_curr = int(sk_id_curr)
 	test_datapoint = pd.read_sql_query(f'SELECT * FROM applications WHERE SK_ID_CURR == {sk_id_curr}', conn)
