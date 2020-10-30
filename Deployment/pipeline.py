@@ -334,7 +334,7 @@ class final_pipeline:
     
     def predict(self, input_data):
         '''
-        Returns the predicted class label for a given query point, and the most important features and their
+        Returns the predicted probability, class label for a given query point, and the most important features and their
         values.
         '''
         conn = sqlite3.connect(self.file_directory + 'HOME_CREDIT_DB.db')
@@ -348,5 +348,5 @@ class final_pipeline:
         else:
         	predicted_class_label = 0
         
-        return predicted_class_label, test_data[['EXT_SOURCE_MEAN', 'TARGET_NEIGHBORS_500_MEAN', 'EXPECTED_INTEREST_RATE',
-                                                        'EXPECTED_INTEREST_SHARE', 'DAYS_PAYMENT_RATIO_MAX_MEAN']]
+        return np.round(test_predicted_probability[0], 4), predicted_class_label, test_data[['EXT_SOURCE_MEAN', 'TARGET_NEIGHBORS_500_MEAN', 'EXPECTED_INTEREST_RATE',
+                                                        					'EXPECTED_INTEREST_SHARE', 'DAYS_PAYMENT_RATIO_MAX_MEAN']]
