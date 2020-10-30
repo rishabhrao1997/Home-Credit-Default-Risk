@@ -1,0 +1,76 @@
+body{
+	margin: 0;
+	padding: 0;
+	background-image: url(161-1619669_texture-texture-wallpaper-background-wallpaper-blue-imagen-para.jpg);
+	background-size: cover;
+	background-position: center;
+	font-family: sans-serif;
+	color: white;
+}
+.intro{
+	margin-top: 10px;
+	color: white;
+}
+.intro h1{
+	font-size: 40px;
+	font-weight: bold;
+	margin-top: 10px;
+	margin-bottom: 0px;
+	font-size: 40px;
+	text-align: center;
+	font-weight: bold;
+	text-transform: uppercase;
+	border-bottom: 1px solid gray;
+	background-color: black;
+	opacity: 0.85;
+}
+.intro h2{
+	text-align: left;
+	font-size: 20px;
+	margin-left: 20px;
+	margin-top: 30px;
+	font-weight: normal;
+	color: black;
+}
+.table-stats{
+	margin-left: 20px;
+	margin-top: 30px;
+	font-size: 14px;
+	color: black;
+}
+table{
+	background-color: white;
+	opacity: 0.8;
+}
+.explanation{
+	margin-left: 20px;
+	margin-top: 30px;
+	margin-bottom: 30px;
+	margin-right: 20px;
+	font-size: 16px;
+	color: navy;
+	background-color: white;
+	opacity: 0.75;
+}
+.result{
+	font-size: 25px;
+	margin-left: 20px
+	margin-top: 30px;
+	color: navy;
+}
+form .submit{
+	text-align: center;
+	margin-left: 40%;
+	background: navy;
+	font-size: 20px;
+	color: white;
+	font-weight: bold;
+	letter-spacing: 0.8px;
+	height: 40px;
+	border-color: blue;
+	border-radius: 10px;
+}
+form .submit:hover{
+	background-color: blue;
+	cursor: pointer;
+}
