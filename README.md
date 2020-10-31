@@ -1,6 +1,6 @@
 # Home-Credit-Default-Risk
 
-This is an end to end Machine Learning Case Study, which focusses on building a predictive model by leveraging the dataset provide by Home Credit Group for identifying Potential Defaulters. <br>
+This is an end to end Machine Learning Case Study, which focusses on building a predictive model by leveraging the dataset provide by Home Credit Group for identifying Potential Loan Defaulters. <br>
 The Repository contains following files:<br>
 <ol><li><b>EDA - Home Credit Default.ipynb:</b><br>
   This ipynb contains the in-depth EDA for the given dataset. Kindly note that some of the plots might not be visible in the github page (plotly plots), which can be viewed by opening the notebook using nbviewer.</li>
